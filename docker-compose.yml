@@ -1,13 +1,13 @@
 version: '3.8'
 services:
   prebid-server:
-    image: yourusername/prebid-server:latest
+    image: adysis/pbs:v1.0.1
     restart: unless-stopped
     network_mode: host
-    environment:
-      - PBS_HOST=0.0.0.0
-      - PBS_PORT=8000
-      # add more env vars here
-    command: >
-      --some-flag
-      --another-flag
+    # environment:
+    #   - PBS_HOST=0.0.0.0
+    #   - PBS_PORT=8000
+    #   # add more env vars here
+    # command: >
+    #   --some-flag
+    #   --another-flag
