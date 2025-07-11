@@ -1,4 +1,3 @@
-version: '3.8'
 services:
   prebid-server:
     image: adysis/pbs:v1.0.1
